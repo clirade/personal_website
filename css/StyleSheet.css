@@ -1,0 +1,56 @@
+.border {
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+#head {
+    height: 10vh;
+    width: 100vw;
+    border-color: yellow;
+}
+
+#menuContainer {
+    height: 85vh;
+    width: 20vw;
+    border-color: red;
+}
+
+#menu {
+    border-color: black;
+    list-style-type: none;
+}
+
+#foot {
+    height: 5vh;
+    width: 100vw;
+}
+
+#name {
+    position: relative;
+    top: -11vh;
+    margin-left: 20vw;
+    text-align: center;
+    width: 60vw;
+}
+
+#logoContainer {
+    max-width: 20vw;
+    max-height: 10vh;
+}
+
+.blockInfo {
+    position: relative;
+    margin: -91vh 0 0 20vw;
+    height: 85vh;
+    width: 80vw;
+    border-color: blue;
+}
+
+.selector {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-width: 0.3px;
+    border-color: orange;
+    padding: 5% 0 5% 0;
+}
