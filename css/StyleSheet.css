@@ -2,31 +2,60 @@
     display: grid;
     grid-template-areas:
     'header header header header header'
+    'contact contact contact contact contact'
     'menu main main main main'
     'footer footer footer footer footer';
-    grid-gap: 10px;
-  background-color: #3f3e3ec0;
-  padding: 10px;
+    grid-gap: 1vh 0.25vw;
+    background-color: #3f3e3ec0;
+    padding: 10px;
 }
 
 #head {
     grid-area: header;
-    height: 10vh;
+    height: 9vh;
     width: 97vw;
     background-color: #eeebebd5;
-    text-align: center;
     //padding: 20px 0;
     //font-size: 30px;
 }
 
+#headTitle {
+    text-align: center;
+    margin-top: -8vh;
+}
+
+#logoContainer {
+    max-width: 20vw;
+    max-height: 10vh;
+    text-align: left;
+}
+
+#contact {
+    grid-area: contact;
+    height: 5vh;
+    width: 97vw;
+    background-color: #eeebebd5;
+    //padding: 20px 0;
+    //font-size: 30px;
+}
+
+#contactContainer {
+    text-align: center;
+    margin: -0.5% 0 0 25%;
+    padding: -5% 0 0 0;
+    border: solid;
+    height: 5vh;
+    width: 15vw;
+    font-size: 125%;
+}
+
 #menuContainer {
     grid-area: menu;
-    height: 78.5vh;
+    height: 73.5vh;
     width: 25vw;
     border-color: red;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    //padding: 20px 0;
 }
 
 #menu {
@@ -36,7 +65,7 @@
 
 #foot {
     grid-area: footer;
-    height: 5vh;
+    height: 4vh;
     width: 97vw;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -50,28 +79,27 @@
 
 .main {
     grid-area: main;
-    height: 78.5vh;
-    width: 71vw;
+    height: 73.5vh;
+    width: 72vw;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     //padding: 20px 0;
     font-size: 30px;
+    background-color: #544867;
+    color: #FFFFFF;
 }
 
 
 
 #name {
     position: relative;
-    top: -11vh;
+    //top: -11vh;
     margin-left: 20vw;
     text-align: center;
     width: 60vw;
 }
 
-#logoContainer {
-    max-width: 20vw;
-    max-height: 10vh;
-}
+
 
 .blockInfo {
     position: relative;
@@ -82,12 +110,38 @@
 }
 
 .selector {
+    text-decoration: none;
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
     border-width: 0.3px;
-    border-color: orange;
     padding: 5% 3% 5% 0;
     font-size: 2.5vh;
     text-align: right;
+    margin: 0 0 3% 40%;
+    //color: #000000;
 }
+
+#homeSelector {
+    background-color: #544867;
+    color: #FFFFFF;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu a:active {
+    //background-color: #544867;
+    color: #FFFFFF;
+}
+
+#menu a:hover {
+    //background-color: #544867;
+    color: #FFFFFF;
+}
+
+#pageLanguageContainer {
+
+}
+
