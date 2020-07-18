@@ -32,21 +32,43 @@
 
 #contact {
     grid-area: contact;
-    height: 5vh;
+    height: 6.5vh;
     width: 97vw;
     background-color: #eeebebd5;
     //padding: 20px 0;
     //font-size: 30px;
 }
 
-#contactContainer {
+#contact h3 {
     text-align: center;
-    margin: -0.5% 0 0 25%;
-    padding: -5% 0 0 0;
+    margin-left: 20%;
+    margin-top: -0.25%;
+    //padding: -5% 0 0 0;
     border: solid;
-    height: 5vh;
+    border-width: 0.3px;
+    font-size: 2.5vh;
     width: 15vw;
-    font-size: 125%;
+}
+
+#contact a {
+    color: #000000;
+}
+
+.enFrContainer {
+    display: block;
+    height: 5vh;
+    width: 5vw;
+    color: #000000;
+}
+
+img.enFrContainer {
+    margin-left: 85%;
+    margin-top: -3.75%;
+}
+
+table.enFrContainer {
+    margin-left: 90.5%;
+    margin-top: -3.5%;
 }
 
 #menuContainer {
