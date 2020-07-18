@@ -63,6 +63,10 @@
     list-style-type: none;
 }
 
+#menu a {
+    text-decoration: none;
+}
+
 #foot {
     grid-area: footer;
     height: 4vh;
@@ -89,8 +93,6 @@
     color: #FFFFFF;
 }
 
-
-
 #name {
     position: relative;
     //top: -11vh;
@@ -98,8 +100,6 @@
     text-align: center;
     width: 60vw;
 }
-
-
 
 .blockInfo {
     position: relative;
@@ -119,26 +119,11 @@
     font-size: 2.5vh;
     text-align: right;
     margin: 0 0 3% 40%;
-    //color: #000000;
-}
-
-#homeSelector {
-    background-color: #544867;
-    color: #FFFFFF;
-}
-
-#menu a {
-    text-decoration: none;
     color: #544867;
 }
 
-#menu a:active {
-    //background-color: #544867;
-    color: #FFFFFF;
-}
-
-#menu a:hover {
-    //background-color: #544867;
+.selector:hover {
+    background-color: #544867;
     color: #FFFFFF;
 }
 
