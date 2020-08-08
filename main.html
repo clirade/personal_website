@@ -2,6 +2,7 @@
 <head>
     <title>Clifford's Webpage</title>
     <link href="css/StyleSheet.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/behavior.js"></script>
 </head>
 
 <body class="gridLayout">
@@ -14,53 +15,62 @@
 
     <section id="contact">
         <h3>Get in Touch:</h3>
-        <img class="enFrContainer" src="images/language-icon.png"/>
-        <table class="enFrContainer">
-            <tr>
-                <td><a href="#">EN</a></td>
-                <td><a href="#">FR</a></td>
-            </tr>
-        </table>
+        <div class="enFrContainer">
+            <img id="pageLanguageIcon" src="images/language-icon.png"/>
+             <table>
+                <tr>
+                    <td><a href="#">EN</a></td>
+                    <td><a href="#">FR</a></td>
+                </tr>
+            </table>
+        </div>
     </section>
 
     <nav id="menuContainer">
         <ul id="menu">
-            <a href="#">
-                <li class="selector">Home</li>
-            </a>
-            <a href="#">
-                <li class="selector"> Spoken <br/> Languages</li>
-            </a>
-            <a href="#">
-                <li class="selector">Programming <br/> Languages</li>
-
-            </a>
-            <a href="#">
-                <li class="selector">Education</li>
-
-            </a>
-            <a href="#">
-                <li class="selector">Experience</li>
-
-            </a>
-            <a href="#">
-                <li class="selector">Skills</li>
-
-            </a>
-            <a href="#">
-                <li class="selector">Outside <br/> of Work</li>
-            </a>
+            
+            <li id="homeSelector" class="selector" onclick="showArticle(this.id)">Home</li>
+            <li id="speakSelector" class="selector" onclick="showArticle(this.id)">Spoken<br/>Languages</li>
+            <li id="codeSelector" class="selector" onclick="showArticle(this.id)">Programming<br/>Languages</li>
+            <li id="schoolSelector" class="selector" onclick="showArticle(this.id)">Education</li>
+            <li id="workSelector" class="selector" onclick="showArticle(this.id)">Experience</li>
+            <li id="skillSelector" class="selector" onclick="showArticle(this.id)">Skills</li>
+            <li id="hobbySelector" class="selector" onclick="showArticle(this.id)">Outside<br/>of Work</li>
         </ul>
     </nav>
 
-    <article class="main">
+    <article id="homeMain" class="main">
         Main
+    </article>
+
+    <article id="speakMain" class="main">
+        Spoken
+    </article>
+
+    <article id="codeMain" class="main">
+        Coding
+    </article>
+
+    <article id="schoolMain" class="main">
+        School
+    </article>
+
+    <article id="workMain" class="main">
+        Work Experience
+    </article>
+
+    <article id="skillMain" class="main">
+        Skills
+    </article>
+
+    <article id="hobbyMain" class="main">
+        Hobbies
     </article>
 
     <footer id="foot">
         <table align="center" class="item border">
             <tr>
-                <td class="border">Copyright &copy C|D 2020</td>
+                <td class="border">Copyright C|D &copy 2020</td>
             </tr>
         </table>
         <h5></h5>

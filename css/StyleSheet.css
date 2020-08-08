@@ -22,6 +22,7 @@
 #headTitle {
     text-align: center;
     margin-top: -8vh;
+    color: #544867;
 }
 
 #logoContainer {
@@ -37,12 +38,16 @@
     background-color: #eeebebd5;
     //padding: 20px 0;
     //font-size: 30px;
+    overflow: hidden;
+    //display: inline-block;
+    //float: left;
+    
 }
 
 #contact h3 {
     text-align: center;
-    margin-left: 20%;
-    margin-top: -0.25%;
+    //margin-left: 20%;
+    //margin-top: -0.25%;
     //padding: -5% 0 0 0;
     border: solid;
     border-width: 0.3px;
@@ -50,25 +55,35 @@
     width: 15vw;
 }
 
+#contact section {
+    //display: inline;
+}
+
 #contact a {
     color: #000000;
 }
 
-.enFrContainer {
-    display: block;
+#pageLanguageIcon {
+    //margin-left: 85%;
+    //margin-top: -3.75%;
     height: 5vh;
     width: 5vw;
-    color: #000000;
 }
 
-img.enFrContainer {
-    margin-left: 85%;
-    margin-top: -3.75%;
+.enFrContainer {
+    
+    color: #000000;
+    border-style: solid;
+    height: 6.5vh;
+    width: 30vw;
+    
+    display: inline;
+
 }
 
 table.enFrContainer {
-    margin-left: 90.5%;
-    margin-top: -3.5%;
+    //margin-left: 90.5%;
+    //margin-top: -3.5%;
 }
 
 #menuContainer {
@@ -87,6 +102,41 @@ table.enFrContainer {
 
 #menu a {
     text-decoration: none;
+}
+
+#homeSelector {
+    border-radius: 30% 0 0 0;
+}
+
+#hobbySelector {
+    border-radius: 0 0 0 40%;
+}
+
+#homeMain {
+}
+
+#speakMain {
+    display: none;
+}
+
+#codeMain {
+    display: none;
+}
+
+#schoolMain {
+    display: none;
+}
+
+#workMain {
+    display: none;
+}
+
+#skillMain {
+    display: none;
+}
+
+#hobbyMain {
+    display: none;
 }
 
 #foot {
@@ -132,7 +182,7 @@ table.enFrContainer {
 }
 
 .selector {
-    text-decoration: none;
+    width: 40%;
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
@@ -140,7 +190,7 @@ table.enFrContainer {
     padding: 5% 3% 5% 0;
     font-size: 2.5vh;
     text-align: right;
-    margin: 0 0 3% 40%;
+    margin: 0 0 3% 56.75%;
     color: #544867;
 }
 
@@ -149,7 +199,9 @@ table.enFrContainer {
     color: #FFFFFF;
 }
 
-#pageLanguageContainer {
 
+
+.test {
+    
 }
 
