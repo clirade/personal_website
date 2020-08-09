@@ -1,22 +1,23 @@
 .gridLayout {
     display: grid;
-    grid-template-areas:
-    'header header header header header'
-    'contact contact contact contact contact'
-    'menu main main main main'
-    'footer footer footer footer footer';
-    grid-gap: 1vh 0.25vw;
+    //grid-template-areas:
+    //'header header header header header'
+    //'contact contact contact contact contact'
+    //'menu main main main main'
+    //'footer footer footer footer footer';
+    //grid-gap: 1vh 0.25vw;
     background-color: #3f3e3ec0;
     padding: 10px;
 }
 
 #head {
-    grid-area: header;
-    height: 9vh;
-    width: 97vw;
+    //grid-area: header;
+    height: 10vh;
+    width: 96vw;
     background-color: #eeebebd5;
     //padding: 20px 0;
     //font-size: 30px;
+    margin: 0 0 1vh 1.75vw;
 }
 
 #headTitle {
@@ -32,16 +33,16 @@
 }
 
 #contact {
-    grid-area: contact;
+    //grid-area: contact;
     height: 6.5vh;
-    width: 97vw;
+    width: 96vw;
     background-color: #eeebebd5;
     //padding: 20px 0;
     //font-size: 30px;
     overflow: hidden;
     //display: inline-block;
     //float: left;
-    
+    margin: 0 0 1vh 1.75vw;
 }
 
 #contact h3 {
@@ -87,12 +88,14 @@ table.enFrContainer {
 }
 
 #menuContainer {
-    grid-area: menu;
-    height: 73.5vh;
-    width: 25vw;
+    //grid-area: menu;
+    height: 74vh;
+    //width: 25vw;
     border-color: red;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
+    margin: 0 0.5vw 1vh 4.4vw;
+
 }
 
 #menu {
@@ -140,13 +143,14 @@ table.enFrContainer {
 }
 
 #foot {
-    grid-area: footer;
+    //grid-area: footer;
     height: 4vh;
-    width: 97vw;
+    width: 96vw;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     //font-size: 20px;
     font-weight: bold;
+    margin-left: 1.75vw;
 }
 
 #foot table {
@@ -154,9 +158,9 @@ table.enFrContainer {
 }
 
 .main {
-    grid-area: main;
-    height: 73.5vh;
-    width: 71.75vw;
+    //grid-area: main;
+    height: 74vh;
+    //width: 71.75vw;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     //padding: 20px 0;

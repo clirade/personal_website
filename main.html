@@ -3,12 +3,13 @@
     <title>Clifford's Webpage</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="css/StyleSheet.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/behavior.js"></script>
 </head>
 
-<body class="gridLayout">
-    <header id="head">
+<body class="gridLayout container-fluid">
+    <header id="head" class="row">
         <svg id="logoContainer">
             <rect x="10vw" y="0.5vh" width="8vh" height="8vh" fill="none" stroke="#000000" class="border" />
             <!--<img src="images/CD-logo-circle-cropped.png"/>-->
@@ -16,7 +17,7 @@
         <h1 id="headTitle">Clifford R. Denis</h1>
     </header>
 
-    <section id="contact">
+    <section id="contact" class="row">
         <h3>Get in Touch:</h3>
         <div class="enFrContainer">
             <!--<img id="pageLanguageIcon" src="images/language-icon.png"/>-->
@@ -29,48 +30,51 @@
         </div>
     </section>
 
-    <nav id="menuContainer">
-        <ul id="menu">
-            
-            <li id="homeSelector" class="selector" onclick="showArticle(this.id)">Home</li>
-            <li id="speakSelector" class="selector" onclick="showArticle(this.id)">Spoken<br/>Languages</li>
-            <li id="codeSelector" class="selector" onclick="showArticle(this.id)">Programming<br/>Languages</li>
-            <li id="schoolSelector" class="selector" onclick="showArticle(this.id)">Education</li>
-            <li id="workSelector" class="selector" onclick="showArticle(this.id)">Experience</li>
-            <li id="skillSelector" class="selector" onclick="showArticle(this.id)">Skills</li>
-            <li id="hobbySelector" class="selector" onclick="showArticle(this.id)">Outside<br/>of Work</li>
-        </ul>
-    </nav>
+    <div class="row">
+        <nav id="menuContainer" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <ul id="menu">
+                
+                <li id="homeSelector" class="selector" onclick="showArticle(this.id)">Home</li>
+                <li id="speakSelector" class="selector" onclick="showArticle(this.id)">Spoken<br/>Languages</li>
+                <li id="codeSelector" class="selector" onclick="showArticle(this.id)">Programming<br/>Languages</li>
+                <li id="schoolSelector" class="selector" onclick="showArticle(this.id)">Education</li>
+                <li id="workSelector" class="selector" onclick="showArticle(this.id)">Experience</li>
+                <li id="skillSelector" class="selector" onclick="showArticle(this.id)">Skills</li>
+                <li id="hobbySelector" class="selector" onclick="showArticle(this.id)">Outside<br/>of Work</li>
+            </ul>
+        </nav>
+    
+        <article id="homeMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            Main
+        </article>
+    
+        <article id="speakMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            Spoken
+        </article>
+    
+        <article id="codeMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            Coding
+        </article>
+    
+        <article id="schoolMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            School
+        </article>
+    
+        <article id="workMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            Work Experience
+        </article>
+    
+        <article id="skillMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            Skills
+        </article>
+    
+        <article id="hobbyMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            Hobbies
+        </article>    
 
-    <article id="homeMain" class="main">
-        Main
-    </article>
-
-    <article id="speakMain" class="main">
-        Spoken
-    </article>
-
-    <article id="codeMain" class="main">
-        Coding
-    </article>
-
-    <article id="schoolMain" class="main">
-        School
-    </article>
-
-    <article id="workMain" class="main">
-        Work Experience
-    </article>
-
-    <article id="skillMain" class="main">
-        Skills
-    </article>
-
-    <article id="hobbyMain" class="main">
-        Hobbies
-    </article>
-
-    <footer id="foot">
+    </div>
+    
+    <footer id="foot" class="row">
         <table align="center" class="item border">
             <tr>
                 <td class="border">Copyright C|D &copy 2020</td>
