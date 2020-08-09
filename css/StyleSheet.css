@@ -12,7 +12,7 @@
 
 #head {
     //grid-area: header;
-    height: 10vh;
+    height: 9.5vh;
     width: 96vw;
     background-color: #eeebebd5;
     //padding: 20px 0;
@@ -20,16 +20,16 @@
     margin: 0 0 1vh 1.75vw;
 }
 
-#headTitle {
-    text-align: center;
-    margin-top: -8vh;
-    color: #544867;
+#head img {
+    width: 5vw;
+    height: 8.5vh;
+    margin: 0.5vh 0 0 13vw;
 }
 
-#logoContainer {
-    max-width: 20vw;
-    max-height: 10vh;
-    text-align: left;
+#head h1 {
+    text-align: center;
+    margin-top: -6.5vh;
+    color: #544867;
 }
 
 #contact {
@@ -89,7 +89,7 @@ table.enFrContainer {
 
 #menuContainer {
     //grid-area: menu;
-    height: 74vh;
+    height: 73.5vh;
     //width: 25vw;
     border-color: red;
     background-color: rgba(255, 255, 255, 0.8);
@@ -109,6 +109,7 @@ table.enFrContainer {
 
 #homeSelector {
     border-radius: 30% 0 0 0;
+    margin-top: 5%;
 }
 
 #hobbySelector {
@@ -144,22 +145,37 @@ table.enFrContainer {
 
 #foot {
     //grid-area: footer;
-    height: 4vh;
+    height: 5vh;
     width: 96vw;
     background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
+    //text-align: center;
     //font-size: 20px;
     font-weight: bold;
     margin-left: 1.75vw;
+    float: left;
 }
 
-#foot table {
-    padding-top: 5px;
+//#foot p {
+ //   display: inline-block;
+ //   margin-top: 0.35%;
+//}
+
+#copyright {
+    position: relative;
+    left: 50%;
+    top: 25%;
+}
+
+#webtools {
+    position: relative;
+    left: 43%;
+    top: -80%;
+    text-align: center;
 }
 
 .main {
     //grid-area: main;
-    height: 74vh;
+    height: 73.5vh;
     //width: 71.75vw;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -186,7 +202,7 @@ table.enFrContainer {
 }
 
 .selector {
-    width: 40%;
+    width: 77%;
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
@@ -194,7 +210,7 @@ table.enFrContainer {
     padding: 5% 3% 5% 0;
     font-size: 2.5vh;
     text-align: right;
-    margin: 0 0 3% 56.75%;
+    margin: 0 0 3% 32%;
     color: #544867;
 }
 
