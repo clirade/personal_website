@@ -7,29 +7,28 @@
     <script type="text/javascript" src="js/behavior.js"></script>
 </head>
 
-<body class="gridLayout container-fluid">
+<body id="bodyLayout" class="container-fluid">
     <header id="head" class="row">
         <img src="images/CD-logo-circle-cropped.png"/>
         <h1>Clifford R. Denis</h1>
     </header>
 
     <section id="contact" class="row">
-        <h3>Get in Touch:</h3>
-        <div class="enFrContainer">
-            <!--<img id="pageLanguageIcon" src="images/language-icon.png"/>-->
-             <table>
-                <tr>
-                    <td><a href="#">EN</a></td>
-                    <td><a href="#">FR</a></td>
-                </tr>
-            </table>
+        <div>
+            <p id="social">Get in Touch: <a href="https://www.linkedin.com/in/clifforddenis/"><img src="images/linkedin-logo.png"/></a>
+                <a href="https://github.com/clirade"><img src="images/GitHub-Mark-64px.png"/></a></p>
+        </div>
+        
+        <div id="enFrContainer">
+            <img src="images/language-icon-transparent.png"/>
+            <p><a href="#">EN</a></p>
+            <p><a href="#">FR</a></p>
         </div>
     </section>
 
     <div class="row">
         <nav id="menuContainer" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <ul id="menu">
-                
                 <li id="homeSelector" class="selector" onclick="showArticle(this.id)">Home</li>
                 <li id="speakSelector" class="selector" onclick="showArticle(this.id)">Spoken<br/>Languages</li>
                 <li id="codeSelector" class="selector" onclick="showArticle(this.id)">Programming<br/>Languages</li>
@@ -40,33 +39,41 @@
             </ul>
         </nav>
     
-        <article id="homeMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            Main
-        </article>
+        <section id="homeMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h1>Welcome</h1>
+            <article>
+                
+            </article>
+        </section>
     
-        <article id="speakMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            Spoken
-        </article>
+        <section id="speakMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h1>Spoken Languages</h1>
+            
+            <article class="articleLayout">
+                <p>English</p>
+                <p>French</p>
+            </article>
+        </section>
     
-        <article id="codeMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            Coding
-        </article>
+        <section id="codeMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h1>Programming Languages</h1>
+        </section>
     
-        <article id="schoolMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            School
-        </article>
+        <section id="schoolMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h1>Education</h1>
+        </section>
     
-        <article id="workMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            Work Experience
-        </article>
+        <section id="workMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h1>Work Experience</h1>
+        </section>
     
-        <article id="skillMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            Skills
-        </article>
+        <section id="skillMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h1>Skills</h1>
+        </section>
     
-        <article id="hobbyMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            Hobbies
-        </article>    
+        <section id="hobbyMain" class="main col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h1>Hobbies</h1>
+        </section>    
 
     </div>
     
@@ -74,43 +81,5 @@
         <p id="copyright">Copyright C|D &copy 2020</p>
         <p id="webtools">Created with:<br/>HTML, CSS, JS, BootStrap</p>
     </footer>
-
-    <!--
-            <div class="item1">Header</div>
-
-            <header id="head" class="border">
-        
-        <h1 id="name" class="border">Clifford R. Denis</h1>
-    </header>
-
-    <nav id="menuContainer" class="border" align="center">
-        <ul id="menu" class="border">
-            <li class="selector"><a href="#">Home</a></li>
-            <li class="selector"><a href="#">Spoken Languages</a></li>
-            <li class="selector"><a href="#">Programming Languages</a></li>
-            <li class="selector"><a href="#">Education</a></li>
-            <li class="selector"><a href="#">Experience</a></li>
-            <li class="selector"><a href="#">Skills</a></li>
-            <li class="selector"><a href="#">Cliff Outside of Work</a></li>
-            <li class="selector"><a href="#">Contact Me</a></li>
-        </ul>
-    </nav>
-
-    <footer id="foot" class="border" align="center">
-        <p>Copyright C|D @ 2020</p>
-    </footer>
-
-    <article class="blockInfo border">
-        <header class="border">
-            <svg class="border">
-                <circle cx="50%" cy="50%" r="40%" fill="none" stroke="#000000" />
-            </svg>
-            <h1 class="border">Clifford R. Denis</h1>
-        </header>
-    </article>
-
--->
-
-    
 
 </body>

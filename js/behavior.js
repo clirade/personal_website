@@ -18,7 +18,7 @@ function showArticle(currentSelectorId) {
     el.style.display = "block";
     // hide everything else
 
-    el.style.display = "block";
+    el.style.display = "flex";
     for (let i = 0; i < mainArticlesList.length; i++) {
         if (mainArticlesList[i] != currentMainId) {
             el = document.getElementById(mainArticlesList[i]);
