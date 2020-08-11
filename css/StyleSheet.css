@@ -79,15 +79,17 @@
 
 #menuContainer {
     height: 73.5vh;
-    border-color: red;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     margin: 0 0.5vw 1vh 4.1vw;
+    padding: 0;
 }
 
 #menu {
-    border-color: black;
+    position: absolute;
     list-style-type: none;
+    width: 100%;
+    height: 100%;
 }
 
 #menu a {
@@ -96,7 +98,7 @@
 
 #homeSelector {
     border-radius: 30% 0 0 0;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 #hobbySelector {
@@ -155,16 +157,18 @@
 }
 
 .selector {
-    width: 77%;
+    width: 70%;
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
     border-width: 0.3px;
-    padding: 5% 3% 5% 0;
+    padding: 5% 2.5% 5% 2.5%;
     font-size: 2.5vh;
     text-align: right;
-    margin: 0 0 3% 32%;
+    margin-bottom: 3%;
     color: #544867;
+    font-size: 1.6rem;
+    float: right;
 }
 
 .selector:hover {
@@ -174,21 +178,42 @@
 
 .main {
     height: 73.5vh;
-    //text-align: center;
     font-size: 30px;
     background-color: #544867;
     color: #FFFFFF;
+    overflow: scroll;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.articleLayout {
+    border: 0.15rem solid #FFFFFF;
+    padding: 5% 5% 5% 2%;
+    min-width: 10vw;
+    min-height: 20vh;
+    margin: 0;
+    position: absolute;
+    top: 55.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+    height: 89.25%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.articleLayout {
-    border-style: solid;
-    border-radius: 35%;
-    //position: relative;
-    //margin: auto;
-    //width: 60%;
-    padding: 10%;
-
+.articleLayout ul {
+    list-style-type: none;
 }
+
+/*  Cell Phones */
+@media screen and (max-width: 768px) {
+    #menuContainer {
+        display: none;
+    }
+  }
