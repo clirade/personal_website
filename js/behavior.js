@@ -26,14 +26,3 @@ function showArticle(currentSelectorId) {
     }    
 }
 
-function adjustMainArticleSize(currentWinSize) {
-    if (windowSize.matches) { // If media query matches
-      document.body.style.backgroundColor = "yellow";
-    } else {
-      document.body.style.backgroundColor = "pink";
-    }
-}
-
-var windowSize = window.matchMedia("(max-width: 768px)")
-adjustMainArticleSize(windowSize) // Call listener function at run time
-windowSize.addListener(adjustMainArticleSize) // Attach listener function on state changes

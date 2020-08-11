@@ -7,13 +7,12 @@
     height: 9.5vh;
     width: 96vw;
     background-color: #eeebebd5;
-    margin: 1vh 0 1vh 1vw;
+    margin: 1vh 1vw 1vh 1vw;
 }
 
 #head img {
-    width: 5vw;
-    height: 8.5vh;
-    margin: 0.5vh 0 0 7.5vw;
+    height: 75%;
+    margin: 1.25vh 0 0 7.5vw;
     border: solid;
     border-radius: 50%;
     border-color: #544867;
@@ -23,6 +22,15 @@
     text-align: center;
     margin-top: -6.5vh;
     color: #544867;
+}
+
+#mobileMenu {
+    display: none;
+    position: absolute;
+    top: 1vh;
+    left: 6vw;
+    font-size: 7.125vh;
+    color: #000000;
 }
 
 #contact {
@@ -137,7 +145,7 @@
     width: 96vw;
     background-color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
-    margin-left: 1vw;
+    margin: 0 1vw 0 1vw;
 }
 
 #copyright {
@@ -195,7 +203,7 @@
     min-height: 20vh;
     margin: 0;
     position: absolute;
-    top: 55.5%;
+    top: 55.25%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -212,8 +220,26 @@
 }
 
 /*  Cell Phones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     #menuContainer {
         display: none;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    .main {
+        height: 80vh;
+        margin: 0 1vw 1vh 4.1vw;
+    }
+
+    #head img {
+        position: relative;
+        left: 75vw;
+    }
+
+    #mobileMenu {
+        display: block;
     }
   }
