@@ -192,6 +192,10 @@
     text-align: right;
 }
 
+.mobileSelector {
+    cursor: pointer;
+}
+
 .selector {
     width: 70%;
     border-top-style: solid;
