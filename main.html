@@ -3,15 +3,28 @@
     <title>Clifford's Webpage</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/StyleSheet.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/behavior.js"></script>
 </head>
 
 <body id="bodyLayout" class="container-fluid">
     
+    <div id="mobileOverlay">
+        <a id="closebtn" onclick="closeMobileMenu()">&times;</a>
+
+        <nav id="mobileOverlayContent">
+            <li id="mobilehomeSelector" class="mobileSelector" onclick="showArticle(this.id)">Home</li>
+            <li id="mobilespeakSelector" class="mobileSelector" onclick="showArticle(this.id)">Spoken<br/>Languages</li>
+            <li id="mobilecodeSelector" class="mobileSelector" onclick="showArticle(this.id)">Programming<br/>Languages</li>
+            <li id="mobileschoolSelector" class="mobileSelector" onclick="showArticle(this.id)">Education</li>
+            <li id="mobileworkSelector" class="mobileSelector" onclick="showArticle(this.id)">Experience</li>
+            <li id="mobileskillSelector" class="mobileSelector" onclick="showArticle(this.id)">Skills</li>
+            <li id="mobilehobbySelector" class="mobileSelector" onclick="showArticle(this.id)">Outside<br/>of Work</li>
+        </nav>
+    </div>
+
     <header id="head" class="row">
-        <a id="mobileMenu" href="#"><i class="fa fa-bars"></i></a>
+        <a id="mobileMenu" onclick="openMobileMenu()"><span class="">&#9776;</span></a>
         <img src="images/CD-logo-circle-cropped.png"/>
         <h1>Clifford R. Denis</h1>
     </header>
