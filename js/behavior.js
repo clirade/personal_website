@@ -52,3 +52,12 @@ function closeMobileMenu() {
     // Move the mobile menu back out of view
     document.getElementById("mobileOverlay").style.width = "0%";
 }
+
+window.onload = function(){
+    // Make sure we always use the inner height.
+    // Needed for cell phones
+    let screenHeight = window.innerHeight;
+    let screenWidth = window.innerWidth;
+    document.getElementById("bodyLayout").style.height = screenHeight + "px";
+    document.getElementById("bodyLayout").style.width = screenWidth + "px";
+  };
