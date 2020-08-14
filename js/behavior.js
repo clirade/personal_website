@@ -43,14 +43,33 @@ function showArticle(currentSelectorId) {
 
 }
 
+function toggleMobileMenu() {
+    // First turn the hamburger menu into a close button and vice versa
+    document.getElementById("menuIcon").classList.toggle("change");
+    // Use the content display status to figure out what is being asked
+    // If content is hidden, then we're opening the menu, otherwise, we're closing it
+    if (document.getElementById("mobileOverlayContent").style.display === "none" ) {
+        openMobileMenu();
+    } else {
+        closeMobileMenu();
+    }
+}
+
 function openMobileMenu() {
-    // Make the mobile menu take up all the screen
+    // Open the menu
+    // Make the mobile menu take up the whole width of the screen
     document.getElementById("mobileOverlay").style.width = "100%";
+    // Delay showing the content to avoid the weird way it unwraps otherwise
+    setTimeout(() => {
+        document.getElementById("mobileOverlayContent").style.display = "block";
+    }, 250);
 }
 
 function closeMobileMenu() {
-    // Move the mobile menu back out of view
+    // Close the menu
+    // Move the mobile menu back out of view and hide the content
     document.getElementById("mobileOverlay").style.width = "0%";
+    document.getElementById("mobileOverlayContent").style.display = "none";
 }
 
 window.onload = function(){

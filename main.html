@@ -15,21 +15,24 @@
 <body id="bodyLayout" class="container-fluid">
     
     <div id="mobileOverlay">
-        <a id="closebtn" onclick="closeMobileMenu()">&times;</a>
-
         <nav id="mobileOverlayContent">
             <li id="mobilehomeSelector" class="mobileSelector" onclick="showArticle(this.id)">Home</li>
-            <li id="mobilespeakSelector" class="mobileSelector" onclick="showArticle(this.id)">Spoken<br/>Languages</li>
-            <li id="mobilecodeSelector" class="mobileSelector" onclick="showArticle(this.id)">Programming<br/>Languages</li>
+            <li id="mobilespeakSelector" class="mobileSelector" onclick="showArticle(this.id)">Spoken Languages</li>
+            <li id="mobilecodeSelector" class="mobileSelector" onclick="showArticle(this.id)">Programming Languages</li>
             <li id="mobileschoolSelector" class="mobileSelector" onclick="showArticle(this.id)">Education</li>
             <li id="mobileworkSelector" class="mobileSelector" onclick="showArticle(this.id)">Experience</li>
             <li id="mobileskillSelector" class="mobileSelector" onclick="showArticle(this.id)">Skills</li>
-            <li id="mobilehobbySelector" class="mobileSelector" onclick="showArticle(this.id)">Outside<br/>of Work</li>
+            <li id="mobilehobbySelector" class="mobileSelector" onclick="showArticle(this.id)">Outside of Work</li>
         </nav>
     </div>
 
     <header id="head" class="row">
-        <a id="mobileMenu" onclick="openMobileMenu()"><span class="">&#9776;</span></a>
+        <!--<a id="mobileMenu" onclick="toggleMobileMenu()"><span id="menuIcon">&#9776;</span></a>-->
+        <div id="menuIcon" onclick="toggleMobileMenu()">
+            <div class="menuBar1"></div>
+            <div class="menuBar2"></div>
+            <div class="menuBar3"></div>
+        </div>
         <img src="images/CD-logo-circle-cropped.png"/>
         <h1>Clifford R. Denis</h1>
     </header>
@@ -60,7 +63,7 @@
             </ul>
         </nav>
     
-        <section id="homeMain" class="main col-xs-11 col-sm-11 col-md-9 col-lg-9">
+        <section id="homeMain" class="main col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <h1>Welcome</h1>
             <article class="articleLayout">
                 <ul>
@@ -71,7 +74,7 @@
             </article>
         </section>
     
-        <section id="speakMain" class="main col-xs-11 col-sm-11 col-md-9 col-lg-9">
+        <section id="speakMain" class="main col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <h1>Spoken Languages</h1>
             <article class="articleLayout">
                 <ul>
@@ -81,7 +84,7 @@
             </article>
         </section>
     
-        <section id="codeMain" class="main col-xs-11 col-sm-11 col-md-9 col-lg-9">
+        <section id="codeMain" class="main col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <h1>Programming Languages</h1>
             <article class="articleLayout">
                 <ul>
@@ -91,19 +94,19 @@
             </article>
         </section>
     
-        <section id="schoolMain" class="main col-xs-11 col-sm-11 col-md-9 col-lg-9">
+        <section id="schoolMain" class="main col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <h1>Education</h1>
         </section>
     
-        <section id="workMain" class="main col-xs-11 col-sm-11 col-md-9 col-lg-9">
+        <section id="workMain" class="main col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <h1>Work Experience</h1>
         </section>
     
-        <section id="skillMain" class="main col-xs-11 col-sm-11 col-md-9 col-lg-9">
+        <section id="skillMain" class="main col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <h1>Skills</h1>
         </section>
     
-        <section id="hobbyMain" class="main col-xs-11 col-sm-11 col-md-9 col-lg-9">
+        <section id="hobbyMain" class="main col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <h1>Hobbies</h1>
         </section>    
 
