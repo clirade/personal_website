@@ -282,7 +282,6 @@
     font-size: 30px;
     background-color: #544867;
     color: #FFFFFF;
-    overflow: scroll;
 }
 
 .main h1 {
@@ -290,7 +289,7 @@
 }
 
 .articleLayout {
-    border: 0.15rem solid #FFFFFF;
+    /*border: 0.15rem solid #FFFFFF;*/
     padding: 5% 5% 5% 2%;
     min-width: 10vw;
     min-height: 20vh;
@@ -300,7 +299,7 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 89%;
     width: 99.5%;
     display: flex;
